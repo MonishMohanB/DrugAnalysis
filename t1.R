@@ -1,9 +1,12 @@
+#####################################################################################################################
+#####################      BEFORE EXECUTING THIS FILE GO TO Main1.R and run it ######################################
+#####################################################################################################################
+
 
 ######################################################################################################
 ######################### NEEDED PACKAGES FOR THE OVERALL PROCESS ####################################
 ######################################################################################################
 
-install.packages("RColorBrewer")
 install.packages("tm")
 install.packages("wordcloud")
 install.packages('base64enc')
@@ -17,6 +20,9 @@ install.packages("purrr")
 install.packages("dplyr")
 install.packages('RSentiment')
 install.packages('scales')
+install.packages('reshape2')
+install.packages("RColorBrewer")
+
 
 library(scales)
 library(RSentiment)
@@ -30,11 +36,18 @@ library(stringr)
 library(base64enc)
 library(wordcloud)
 library(SnowballC)
-library(tm)
 library(RCurl)
 library(purrr)
 library(dplyr)
+library(reshape2)
 
+library(recommenderlab)
+library(recosystem)
+library(SlopeOne)
+library(SVDApproximation)
+library(data.table)
+library(RColorBrewer)
+library(ggplot2)
 
 ######################################################################################################
 #########################     TWITTER AUTHENTICATION PROCESS      ####################################
@@ -52,6 +65,30 @@ t_access_secret <-	'rUbpZgVGj8gF5Uz6uN6GnWWb88JcRzxi2nXJ7OWCbQ36i'
 
 
 setup_twitter_oauth(t_consumer_key,t_consumer_secret,t_access_token,t_access_secret)
+
+
+
+
+input <- read.csv(file ="inputTableFinal.csv",sep = ",",stringsAsFactors=FALSE)
+pos.words <- scan('C:/Users/monis/Pictures/Capstone Project R/druganalysisLocal/positive-words.txt',
+                  what='character', comment.char=';') #folder with positive dictionary
+neg.words <- scan('C:/Users/monis/Pictures/Capstone Project R/druganalysisLocal/negative-words.txt', 
+                  what='character', comment.char=';') #folder with negative dictionary
+
+w<-RunApplication()
+readline("Suggestion list of DRUGS based on your input")
+print(w, max.levels = 0)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
