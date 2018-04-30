@@ -1,0 +1,11 @@
+drugId,drugName,OTC,bothRxOTC,PregA,PregB,PregC,PregD,PregX,PregN,InteractionA
+1,levocetirizine,1,1,1,1,0,0,0,0,1
+2,doxylamine,1,1,1,1,0,0,0,0,1
+3,phenylephrine,1,1,1,1,1,0,0,0,1
+4,Benadryl,1,1,1,1,1,0,0,0,1
+5,Vicks DayQuil,1,1,1,1,1,0,0,0,1
+6,Benadryl Allergy,1,0,1,1,1,0,0,0,1
+7,Vicks NyQuil,1,0,1,1,1,0,0,0,1
+8,Tylenol Cold,1,1,1,1,1,0,0,0,1
+9,Coricidin,1,1,1,1,0,0,0,0,1
+10,Promethazine,0,1,1,1,1,0,0,0,1
