@@ -61,10 +61,10 @@ require("RCurl")
 download.file(url="http://curl.haxx.se/ca/cacert.pem",destfile="cacert.pem")
 
 ###### MY KEYS for twitter access#######################################
-t_consumer_key<-	'JALgcUhEQKGP3N1JXcg5oxJ4O'
-t_consumer_secret<- 'GGqQsh0mHNNLqVKu9DF0rQs6PmFfEwwOCzJLZKHnlH5lLNoZSh'
-t_access_token<-	'958495952041627649-63gHmzaZRdBnQM6p2UhRlKVNZcFd1pP'
-t_access_secret <-	'rUbpZgVGj8gF5Uz6uN6GnWWb88JcRzxi2nXJ7OWCbQ36i'
+t_consumer_key<-	'XXXXXXXXXXXXXXXXXXXXXXXXX'
+t_consumer_secret<- 'XXXXXXXXXXXXXXXXXXXXXXXXX'
+t_access_token<-	'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+t_access_secret <-	'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 #To establish the twitter connection
 setup_twitter_oauth(t_consumer_key,t_consumer_secret,t_access_token,t_access_secret)
 #Run application to get the final result
